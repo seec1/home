@@ -1,47 +1,58 @@
 <!--pages/refund/refund.wxml-->
 <view class='refund'>
-  <view class='top'>
-    <text>退款/售后</text>
+  <view class='refundNav'>
+    <view><text class='active'>全部</text></view>
+    <view><text>待处理</text></view>
   </view>
   <view class='shop'>
     <view class='topText'>
-      <text>neodpillo海外旗舰店</text>
+      <text class='orderNumber'>订单编号:9876543211025666</text>
+      <text class='isFinished'>交易完成 </text>
     </view>
     <view class='imgText'>
       <image src='../img/1.jpg'></image>
       <view class='shopText'>
-        <text class='description'>NeoDPillo印尼邓禄普官方正品原装进口 天然乳胶枕头波浪颈椎枕...</text>
-        <text class='count'>共1件商品</text>
+        <view class='goodsTitle'>
+          <text class='description'>POKALEN乳胶枕头泰国原装进口
+            颈椎天然橡胶枕
+          </text>
+          <text class='price'>￥<text class='priceNum'>299.0</text></text>
+        </view>
+        <view class='checkGoods'>
+          <text>天然乳胶</text><text>X1</text>
+        </view>
       </view>
     </view>
     <view class='shopRefund'>
-      <text class='refundSuccess'>仅退款，退款成功</text>
-      <view>
-        退款金额：￥<text class='refundMoney'>299.00</text>
-      </view>
+      <text class='refundSuccess'>共计1件商品</text>
+      <text> 合计：<text class='price'>￥<text class='priceNum'>299.0</text></text></text>
+      <text> (含运费￥ 0.00)</text>
     </view>
     <view class='line'></view>
-    <view class='lookshop'>查看详情</view>
-  </view>
-  <view class='shop'>
-    <view class='topText'>
-      <text>恒源祥苏恒专卖店</text>
+    <view class='refundBtn'>
+      <text class='refundAppraise'>售后服务评价</text> <text class='lookShop' bindtap='goRefunding'>查看详情</text>
     </view>
     <view class='imgText'>
       <image src='../img/2.jpg'></image>
       <view class='shopText'>
-        <text class='description'>泰国乳胶枕头平枕头低薄枕进口护颈天然 橡胶矮枕芯儿童学生颈椎枕...</text>
-        <text class='count'>共1件商品</text>
+        <view class='goodsTitle'>
+          <text class='description'>POKALEN乳胶枕头泰国原装进口颈椎天然橡胶枕</text>
+          <text class='price'>￥<text class='priceNum'>299.0</text></text>
+        </view>
+        <view class='checkGoods'>
+          <text>天然乳胶</text><text>X1</text>
+        </view>
       </view>
     </view>
     <view class='shopRefund'>
-      <text class='refundSuccess'>仅退款，退款成功</text>
-      <view>
-        退款金额：￥<text class='refundMoney'>88.00</text>
-      </view>
+      <text class='refundSuccess'>共计1件商品</text>
+      <text> 合计：<text class='price'>￥<text class='priceNum'>98.5</text></text></text>
+      <text>(含运费￥ 0.00)</text>
     </view>
     <view class='line'></view>
-    <view class='lookshop'>查看详情</view>
+    <view class='refundBtn'>
+      <text class='cancleOrder'>取消订单</text> <text class='gopay'>去支付</text>
+    </view>
   </view>
   <view class='bottomText'>
     <text>没有更多了</text>
