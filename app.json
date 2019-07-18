@@ -14,7 +14,9 @@
     "pages/evaluate/evaluate",
     "pages/comment-ok/comment-ok",
     "pages/refund/refund",
-    "pages/refunding/refunding"
+    "pages/refunding/refunding",
+    "pages/toevaluation/toevaluation",
+    "pages/toevaluation2/toevaluation2"
   ],
   "permission": {
     "scope.userLocation": {

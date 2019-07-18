@@ -1,5 +1,5 @@
-
-// pages/refund/refund.js
+// pages/toevaluation/toevaluation.js
+import Toast from '../../miniprogram_npm/vant-weapp/toast/toast';
 Page({
 
   /**
@@ -8,24 +8,36 @@ Page({
   data: {
 
   },
-  goRefunding(){
-    console.log(1)
-    wx.navigateTo({
-      url: '../refunding/refunding',
+  upimg() {
+    wx.chooseImage({
+      success(res) {
+        const tempFilePaths = res.tempFilePaths
+        wx.uploadFile({
+          url: 'https://example.weixin.qq.com/upload', //仅为示例，非真实的接口地址
+          filePath: tempFilePaths[0],
+          name: 'file',
+          formData: {
+            'user': 'test'
+          },
+          success(res) {
+            const data = res.data
+            //do something
+          }
+        })
+      }
     })
   },
-  toevaluation(){
+  publish() {
+    Toast.success("发表成功")
     wx.navigateTo({
-      url: '../toevaluation/toevaluation',
+      url: '../toevaluation2/toevaluation2',
     })
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.setNavigationBarTitle({
-      title: '售后/退款',
-    })
+
   },
 
   /**

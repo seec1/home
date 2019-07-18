@@ -1,0 +1,84 @@
+<!--pages/toevaluation/toevaluation.wxml-->
+
+<view class="toevaluation">
+  <view class="to-top">
+    <view class="to-top-img">
+      <image src=""></image>
+    </view>
+    <view class="evaluate-status">
+      <view class="icon-box">
+        <van-icon name="flower-o" color="red" size="20"/>
+        <text>好评</text>
+      </view>
+      <view class="icon-box">
+        <van-icon name="flower-o" size="20"/>
+        <text>中评</text>
+      </view>
+      <view class="icon-box">
+        <van-icon name="flower-o" size="20"/>
+        <text>差评</text>
+      </view>
+    </view>
+  </view>
+  <view class="ev-textarea">
+    <view class="section">
+      <textarea placeholder="宝贝满足你的期待吗？说说你的使用心得，分享给想买的他们吧" auto-focus style="width:100%;height:150rpx" />
+    </view>
+    <view class="upimgbox" bindtap="upimg">
+      <van-icon name="photograph" size="80rpx" class="upimg-icon"></van-icon>
+      <text class="upimg-txt">添加图片</text>
+    </view>
+  </view>
+  <!-- anonymous匿名 -->
+  <view class="anonymous">
+    <icon type="success" size="20" color="red"/>
+    <view class="a-txt-box">
+      <text class="anonymous-txt">匿名</text>
+      <text class="anonymous-txt">你写的评价会以匿名的形式展现</text>
+    </view>
+  </view>
+  <!-- attitude 态度 -->
+  <view class="attitude">
+    <view class="attitude-box pd-top-40">
+      <view class="att-txt">描述相符</view>
+      <view class="att-star">
+        <van-icon name="star" size='40rpx' color="#e01616"/>
+        <van-icon name="star" size='40rpx' color="#e01616"/>
+        <van-icon name="star" size='40rpx' color="#e01616"/>
+        <van-icon name="star" size='40rpx' color="#e01616"/>
+        <van-icon name="star" size='40rpx' color="#e01616"/>
+      </view>
+      <view class="att-att">非常好</view>
+    </view>
+    <view class="attitude-box pd-top-40">
+      <view class="att-txt">服务态度</view>
+      <view class="att-star">
+        <van-icon name="star" size='40rpx' color="#e01616"/>
+        <van-icon name="star" size='40rpx' color="#e01616"/>
+        <van-icon name="star" size='40rpx' color="#e01616"/>
+        <van-icon name="star" size='40rpx' color="#e01616"/>
+        <van-icon name="star" size='40rpx' color="#e01616"/>
+      </view>
+      <view class="att-att">非常好</view>
+    </view>
+    <view class="attitude-box pd-40">
+      <view class="att-txt">物流态度</view>
+      <view class="att-star">
+        <van-icon name="star" size='40rpx' color="#e01616"/>
+        <van-icon name="star" size='40rpx' color="#e01616"/>
+        <van-icon name="star" size='40rpx' color="#e01616"/>
+        <van-icon name="star" size='40rpx' color="#e01616"/>
+        <van-icon name="star" size='40rpx' color="#e01616"/>
+      </view>
+      <view class="att-att">非常好</view>
+    </view>
+  </view>
+  <!-- end -->
+  <!-- publish -->  
+  <view class="publish" bindtap="publish">
+    发表评论
+  </view> 
+  <!-- publish -->
+  <van-toast id="van-toast" />
+</view>
+<!-- </view> -->

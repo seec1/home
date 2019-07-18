@@ -30,7 +30,8 @@
     </view>
     <view class='line'></view>
     <view class='refundBtn'>
-      <text class='refundAppraise'>售后服务评价</text> <text class='lookShop' bindtap='goRefunding'>查看详情</text>
+    <!-- toevaluation 售后评价 -->
+      <text class='refundAppraise' bindtap="toevaluation">售后服务评价</text> <text class='lookShop' bindtap='goRefunding'>查看详情</text>
     </view>
     <view class='imgText'>
       <image src='../img/2.jpg'></image>
