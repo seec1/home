@@ -1,0 +1,51 @@
+<view class="cartWrap" wx:if="{{cart}}">
+  <view class="cartBox" wx:for="{{cart}}" wx:key="index">
+    <view class="checkboxBox">
+      <view class="group">
+          <icon type="success" size="22" wx:if="{{item.ischecked}}" bindtap="judge_checked" data-index="{{index}}"/>
+          <icon wx:else type="circle" bindtap="judge_checked" data-index="{{index}}"/>
+          <!-- <icon type="success" size="20" wx:if="{{selectAllStatus}}" bindtap="selectAll" data-index="{{index}}"/>
+          <icon type="circle" bindtap="selectAll" data-index="{{index}}"/> -->
+      </view>
+    </view>
+    <image src="{{item.goods_thumb}}" class="cartImg"></image>
+    <view class="cartContent">
+      <text class="cartContentName">{{item.goods_name}}</text>
+      <text class="cartContentColor">{{item.color}}白色</text>
+      <text class="cartContentPrice">
+        <text class="fontSizeSmall">￥</text>
+        <text class="fontSizeBig">{{item.shop_price}}</text>
+      </text>
+    </view>
+    <view class="btnBox">
+      <view class="clearBtn" wx:if="{{item.ischecked==true}}"  bindtap="remove" data-index="{{index}}">
+        <image src="" class="clearBtnImg"></image>
+        <text class="remove">删除</text>
+      </view>
+      <view class="countBtn" wx:if="{{item.ischecked==false}}">
+        <text class="cut" bindtap="cut" data-index="{{index}}">-</text>
+        <text class="number">{{item.num}}</text>
+        <text class="add" bindtap="add" data-index="{{index}}" >+</text>
+      </view>
+    </view>
+  </view>
+  <view class="cartFixed">
+      <view class="group cartFixedG">
+          <icon type="success" size="20" wx:if="{{selectAllStatus}}" bindtap="selectAll" data-index="{{index}}"/>
+          <icon wx:else type="circle" bindtap="selectAll" data-index="{{index}}"/>
+      </view>
+      <text class="cartFixedTxt">全选</text>
+      <view class="totalPrice">
+        <text class="totalPriceBig">￥{{totalPrice}}</text>
+        <text class="totalPriceMini">.00</text>
+      </view>
+      <view calss="butBox"><button class="button-red" bindtap="toBuy" formType="submit">去结算</button> </view>
+  </view>
+</view>
+<view class="cartEmpty"  wx:else>
+  <view class="emptyBox">
+    <image src="" class="emptyBoxImg"></image>
+    <text class="emptyTxt">购物车是空的~</text>
+    <view class="butBox"> 去逛逛  </view>
+  </view>
+</view>

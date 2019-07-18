@@ -1,0 +1,63 @@
+/* pages/evaluate/evaluate.wxss */
+ev-line{
+  box-shadow: 1px 1px 1px 1px #ccc;
+}
+.ev-top{
+  display:flex;
+  padding:30rpx 25rpx;
+  margin-top:3rpx; 
+	font-family: MicrosoftYaHei;
+  border-top:5rpx solid #ccc;
+  border-bottom:1rpx solid #ccc;
+}
+.ev-top-img{
+  width:80rpx;
+  height:80rpx;
+}
+.evaluate-img{
+  width:80rpx;
+  height:80rpx;
+}
+.ev-top-txt{
+  line-height:70rpx;
+}
+.ev-top-txt1{
+  width: 104rpx;
+	/* height: 26rpx; */
+	font-size: 26rpx;
+	/* line-height: 43rpx; */
+	color: #333333;
+  margin:0 22rpx 0 19rpx;
+}
+.ev-top-txt2{
+  width: 78rpx;
+	/* height: 26rpx; */
+	font-size: 26rpx;
+	/* line-height: 43rpx; */
+	color: #999999;
+}
+.ev-top-start{
+  line-height: 77rpx;
+}
+.ev-top-start van-icon{
+  margin:5rpx;
+}
+.ev-textarea{
+  font-size:26rpx;
+  margin:10rpx 20rpx;
+  border-bottom:2px solid #ccc;
+} 
+.upimgbox{
+  width:150rpx;
+  height:170rpx;
+  border:5rpx dashed #ccc;
+  margin-bottom:10rpx;
+}
+.upimg-icon{
+  display:block;
+  margin:10rpx 30rpx 0;
+}
+.upimg-txt{
+  font-size:30rpx;
+  padding: 10rpx
+}

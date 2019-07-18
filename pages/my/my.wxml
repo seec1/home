@@ -1,0 +1,28 @@
+<view class="myWrap">
+  <view class="myTop">
+    <view class="user">
+      <image src="" class="userImg"></image>
+      <text class="userName">JZR9700</text>
+    </view>
+  </view>
+  <view class="myBody">
+    <view class="myOrder" bindtap='toOrder'>
+      <image src="" class="myOrderItemImg"></image>
+      <text class="myOrderItemContent">我的订单</text>
+      <text class="myOrderItemArrow" >查看全部订单 <text class='Arrow'>></text></text>
+    </view>
+    <view class="myStay">
+      <view class="myStayItem" wx:for="{{myStay}}">
+        <image src="" class="myStayItemImg"></image>
+        <text class="myStayItemTxt">{{item}}</text>
+      </view>
+    </view>
+    <view class="myBox">
+      <view class="myOrder" wx:for="{{myBox}}" bindtap='to' data-index="{{index}}">
+        <image src="" class="myOrderItemImg"></image>
+        <text class="myOrderItemContent">{{item}}</text>
+        <text class="myOrderItemArrow"><text class='Arrow'>></text></text>
+      </view>
+    </view>
+  </view>
+</view>

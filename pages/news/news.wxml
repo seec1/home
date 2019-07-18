@@ -1,0 +1,38 @@
+<view class="newsWrap">
+  <view class="newsTop">
+    <image src="" class="n-t-img"></image>
+    <view class="n-t-txt">
+      <view class="n-t-txt1">
+        <text class="n-t-txt1-1">RECOMMENDED</text>
+        <text class="n-t-txt1-2">每日推荐</text>
+      </view>
+      <text class="n-t-txt2">每   日   推   荐</text>
+    </view>
+    <view class="newsBody">
+       <view class="newsBodyItem">
+          <image src="" class="newsBodyItemImg"></image>
+          <text class="newsBodyItemTitle">泰国波浪平面枕</text>
+          <text class="newsBodyItemDetail">泰国天然乳胶原料</text>
+          <text class="newsBodyItemPic">￥228.0</text>
+       </view>
+       <view class="newsBodyItem">
+          <image src="" class="newsBodyItemImg"></image>
+          <text class="newsBodyItemTitle">泰国波浪平面枕</text>
+          <text class="newsBodyItemDetail">泰国天然乳胶原料</text>
+          <text class="newsBodyItemPic">￥228.0</text>
+       </view>
+       <view class="newsBodyItem">
+          <image src="" class="newsBodyItemImg"></image>
+          <text class="newsBodyItemTitle">泰国波浪平面枕</text>
+          <text class="newsBodyItemDetail">泰国天然乳胶原料</text>
+          <text class="newsBodyItemPic">￥228.0</text>
+       </view>
+       <view class="newsBodyItem">
+          <image src="" class="newsBodyItemImg"></image>
+          <text class="newsBodyItemTitle">泰国波浪平面枕</text>
+          <text class="newsBodyItemDetail">泰国天然乳胶原料</text>
+          <text class="newsBodyItemPic">￥228.0</text>
+       </view>
+    </view>
+  </view>
+</view>

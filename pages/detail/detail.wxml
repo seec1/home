@@ -1,0 +1,182 @@
+<view class="wrap">
+  <!-- 主图 -->
+  <view class="masterMapBox">
+    <image class="masterMap" src="{{goods.goods_thumb}}"></image>
+    <!-- <view class="masterMapBtn">
+      <view class="masterMapBtnLeft">外观</view>
+      <view class='masterMapBtnRight'>图片</view>
+    </view> -->
+  </view>
+  <view class="masterTitle">
+    <text class="titltTxt">{{goods.goods_name}}</text>
+    <view class="share">
+      <image src="" class="shareImg"></image>
+      <text class="shareTxt">分享</text>
+    </view>
+  </view>
+  <view class="masterMoney">
+    <text class="masterMoneySmall">￥</text>
+    <text class="masterMoneyBig">{{goods.shop_price}}</text>
+  </view>
+  <view class="expressageBox">
+    <text class="expressage">快递: 免运费</text>
+    <text class="spell">已拼118笔</text>
+  </view>
+  <view class="goodsTab">
+    <view class="coupon">
+      <view class="couponTop">
+        <!-- 优惠券是图片的话就使用image -->
+        <!-- <image class=""></image> -->
+        <text class="couponLeft">店铺 优惠卷</text>
+        <text class="couponRight">10元店铺优惠卷</text>
+      </view>
+      <view class="couponBottom">
+        <!-- 优惠券是图片的话就使用image -->
+        <!-- <image class=""></image> -->
+        <text class="couponLeft">店铺 优惠卷</text>
+        <text class="couponRight">20元店铺优惠卷</text>
+      </view>
+    </view>
+    <view class="arrow">></view>
+    <view class="commitmentBox">
+      <text class="commitmentIcon">√</text>
+      <text class="commitment">7天无理由 · 48小时发货 · 假一赔十 · 全场包邮 </text>
+    </view>
+    <view class="arrow1">></view>
+  </view>
+  <!-- 拼单 -->
+  <view class="crowdordering">
+    <text class="crowdorderingTitle">2人再拼单，可直接参与</text>
+    <view class="crowdorderingBox">
+      <image class="crowdorderingHeadImg"></image>
+      <view class="crowdorderingName">Lorem Ipsum</view>
+      <view class="crowdorderingTime">
+        <text class="crowdorderingTimeTxt">差3人拼成</text>
+        <view class="crowdorderingTimeResidue">
+          <text class="residue">剩余</text>
+          <text class="residuebg">23</text>
+          <text class="residue">:</text>
+          <text class="residuebg">23</text>
+          <text class="residue">:</text>
+          <text class="residuebg">34</text>
+          <text class="residue">结束</text>
+        </view>
+      </view>
+      <view class="goCrowdordering" bindtap="onClickCenterdiaView">去拼单</view>
+    </view>
+    <view class="successCrowdordering">
+      <image class="successCrowdorderingImg"></image>
+      <text class="successCrowdorderingName">Lorem Ipsum 24分钟前拼单成功</text>
+    </view>
+  </view>
+  <view class="comment">
+    <view class="commentTitle">
+      <text class="commentTitleTxt">商品评价(8823)</text>
+      <text class="viewMore">查看更多</text>
+      <text class="commentArrows">></text>
+    </view>
+    <view class="commentTab">
+      <text wx:for="{{commentTab}}" class="commentTabItem">{{item.type}}({{item.number}})</text>
+    </view>
+    <!-- 评价内容 -->
+    <view class="commentContent">
+      <view class="commentContentTitle">
+        <image class="commentContentTitleImg"></image>
+        <text class="commentContentTitleName">Lorem Ipsum</text>
+      </view>
+      <text class="commentContentTxt">
+        商品质量特别的好晚上睡觉用它-夜到天亮，睡得很踏实没有异味收到货，柔软度还是不错的，枕头本身的味道是很自然的味道。挺好的，有香味，也不贵。枕头买回来枕了两天发现很舒服而且没有味道快递也很快包装的也很好不错告诉包装精美乳胶枕头摸起来软软的，但枕起来又超级有弹性。值得回购呢。
+      </text>
+    </view>
+    <view class="commentContent">
+      <view class="commentContentTitle">
+        <image class="commentContentTitleImg"></image>
+        <text class="commentContentTitleName">Krasgeng</text>
+      </view>
+      <text class="commentContentTxt">
+       商品质量特别的好晚上睡觉用它-夜到天亮，睡得很踏实没有异味收到货，柔软度还是不错的，枕头本身的味道是很自然的味道。
+      </text>
+      <view class="commentContentImgBox">
+        <image class="commentContentImg"></image>
+        <image class="commentContentImg"></image>
+        <image class="commentContentImg"></image>
+      </view> 
+    </view>
+  </view>
+  <!-- 商品详情 -->
+  <view class="detailList">
+    <view class="detailListItem" wx:for="{{6}}">
+      <image src="" class="detailListImg"></image>
+      <text class="detail-l-i-tit">乳胶按摩枕</text>
+      <text class="detail-l-i-txt">￥228</text>
+    </view>
+    <!-- <view class="detailListItem">
+      <image src="" class="detailListImg"></image>
+      <text class="detail-l-i-tit">乳胶按摩枕</text>
+      <text class="detail-l-i-txt">￥228</text>
+    </view>
+    <view class="detailListItem">
+      <image src="" class="detailListImg"></image>
+      <text class="detail-l-i-tit">乳胶按摩枕</text>
+      <text class="detail-l-i-txt">￥228</text>
+    </view> -->
+  </view>
+  <!-- 重新写个view和images添加详情图片 -->
+  <view class="detailImgBox">
+    <image wx:for="{{gallery}}" src="{{item.img_url}}" class="detailImg"></image>
+  </view>
+</view>
+<view class="fixedBox">
+  <view class="itemBox">
+    <view class="iconBox" bindtap="toIndex">
+      <image class="iconImg"></image>
+      <text class="iconTxt">首页</text>
+    </view>
+    <view class="iconBox" bindtap="add">
+      <image class="iconImg"></image>
+      <text class="iconTxt">收藏</text>
+    </view>
+    <view class="iconBox">
+      <image class="iconImg"></image>
+      <text class="iconTxt">客服</text>
+    </view>
+  </view>
+  <view class="itemBox itemBoxTxt opacity" bindtap="onClickCenterdiaView" data-type="0">发起拼单</view>
+  <view class="itemBox itemBoxTxt" bindtap="onClickCenterdiaView" data-type="1">单独购买</view>
+      <!-- <view class="button" bindtap="onClickCenterdiaView"></view> -->
+</view>
+
+<view class="dialog"><!--dialog-->
+  <view class="dialog-mask" bindtap="onClickCenterdiaView" wx:if="{{showCenterDialog}}" /><!--dialog-mask-->
+  <view class="dialog-container" anmation="{{animationData}}" wx:if="{{showCenterDialog}}"><!--dialog-container-->
+    <view class="addCartDrtail">
+      <view class="addCartDrtailImgBox">
+        <image src="{{goods.goods_thumb}}" class="addCartDrtailImg"></image>
+      </view>
+      <view class="addCartDrtailTxt">
+        <text class="redTxt">￥122-133</text>
+        <text class="miniTxt">库存2343件</text>
+        <text class="bigTxt">请选择尺码</text>
+      </view>
+      <view class="CloseBut" bindtap="onClickCenterdiaView">×</view><!--button-->
+    </view>
+    <view class="addCartDrtailTitle">尺码</view>
+    <view class="addCartDrtailList">
+      <text class="addCartDrtailItem">60*40cm</text>
+      <text class="addCartDrtailItem">58*36cm</text>
+    </view>
+    <view class="addCartDrtailTitle">颜色</view>
+    <view  class="addCartDrtailList">
+      <text class="addCartDrtailItem">白色</text>
+    </view>
+    <view class="addCartDrtailNumBox">
+      <view class="addCartDrtailTitle">数量</view>
+      <view class="numBox">
+        <text class="cut" bindtap="cut">-</text>
+        <text class="number">{{goods.num}}</text>
+        <text class="add" bindtap="add">+</text>
+      </view>
+    </view>
+    <view class="fix" bindtap="jump" data-id="{{goods.goods_id}}">确定</view>
+  </view>
+</view>

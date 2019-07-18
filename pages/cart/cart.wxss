@@ -1,0 +1,207 @@
+/* pages/cart/cart.wxss */
+image{
+  background: #ccc;
+}
+.cartWrap{
+  font-family: MicrosoftYaHei;
+  border-bottom:200rpx solid #f7f7f7;
+  background: #f7f7f7;
+}
+.cartBox{
+  display:flex;
+  padding:57rpx 24rpx;
+  border-bottom:20rpx solid #f7f7f7;
+  box-shadow: 0rpx 1rpx 2rpx 0rpx 
+		rgba(0, 0, 0, 0.06), 
+		inset 0rpx 0rpx 0rpx 0rpx 
+		rgba(228, 228, 228, 0.35);
+    background: #fff;
+}
+.checkboxBox{
+  width:42rpx;
+  height:42rpx;
+  margin:50rpx  0;
+}
+.cartImg{
+  width: 180rpx;
+	height: 180rpx;
+  margin:auto 37rpx auto 50rpx;
+  border-radius: 10rpx;
+}
+.cartContent{
+  width:200rpx;
+}
+.cartContent>text{
+  display:block;
+}
+.cartContentName{
+	font-size: 34rpx;
+	line-height: 31rpx;
+	color: #333;
+  margin-top:10rpx;
+}
+.cartContentColor{
+  font-size: 28rpx;
+	line-height: 31rpx;
+	color: #afafaf;
+  margin:21rpx 0 50rpx 0;
+}
+.cartContentPrice{
+  font-size: 30rpx;
+	color: #df0000;
+}
+.fontSizeSmall{
+  font-size: 26rpx;
+	line-height: 24rpx;
+}
+.group{
+  width: 42rpx;
+  height: 42rpx;
+  /* border: 1rpx solid #afafaf; */
+  /* border-radius: 50%; */
+  /* overflow: hidden; */
+}
+.btnBox{
+  position:relative;
+  width:200rpx;
+}
+.clearBtn{
+  position:absolute;
+  top:-45rpx;
+  left:0;
+  width: 100rpx;
+	height: 180rpx;
+  margin:48rpx 0 0 31rpx;
+	background-color: #f7f7f7;
+	border-radius: 10rpx;
+  overflow: hidden;
+
+}
+.clearBtnImg{
+  display:block;
+  width: 44rpx;
+	height: 43rpx;
+  margin:48rpx 29rpx 21rpx 31rpx;
+}
+.remove{
+  display:block;
+  width:100rpx;
+  text-align: center;
+	font-size: 28rpx;
+	line-height: 34rpx;
+	color: #afafaf;
+}
+.countBtn{
+  position:absolute;
+  top:140rpx;
+  left:0;
+  display:flex;
+  width:200rpx;
+  height:32rpx;
+}
+.countBtn text{
+  display:block;
+  line-height: 29rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #b5b5b5;
+}
+.cut{
+  width: 46rpx;
+	height: 32rpx;
+	background-color: #fffdfe;
+	border-radius: 4rpx 1rpx 1rpx 4rpx;
+	border: solid 1rpx #e7e7e7;
+}
+.number{
+  width: 70rpx;
+	height: 32rpx;
+	background-color: #fffdfe;
+	border: solid 1rpx #e7e7e7;
+}
+.add{
+  width: 46rpx;
+	height: 32rpx;
+	background-color: #fffdfe;
+	border-radius: 0rpx 4rpx 4rpx 0rpx;
+	border: solid 1rpx #e7e7e7;
+}
+.cartFixed{
+  position:fixed;
+  left:0;
+  bottom:0;
+  display:flex;
+  padding:24rpx;
+  background: #fff;
+}
+.totalPrice{
+  width:150rpx;
+  margin:0 23rpx 0 200rpx;
+  color: #e01616;
+}
+.totalPriceBig{
+  width: 133rpx;
+	height: 29rpx;
+	font-size: 36rpx;
+	line-height: 31rpx;
+}
+.totalPriceMini{
+  font-size: 30rpx;
+}
+.butBox{
+  width: 150rpx;
+	height: 70rpx;
+	background-color: #dc3025;
+	box-shadow: 1rpx 4rpx 12rpx 1rpx 
+		rgba(164, 215, 189, 0.29);
+	border-radius: 12rpx;
+}
+.cartFixedG{
+  margin-right:32rpx;
+}
+.cartFixedTxt{
+  width: 60rpx;
+	height: 50rpx;
+	font-size: 30rpx;
+	line-height: 51rpx;
+	color: #333333;
+}
+.cartEmpty{
+  width:750rpx;
+  height:auto;
+}
+.button-red{
+  color:#fff;
+  background: #f60;
+}
+.emptyBox{
+  width:284rpx;
+  height:385rpx;
+  margin:347rpx auto;
+}
+.emptyBoxImg{
+  width: 284rpx;
+	height: 170rpx;
+	background-color: #397755;
+	opacity: 0.3;
+}
+.emptyTxt{
+  display:block;
+  width:284rpx;
+  margin:30rpx 0 58rpx 0;
+  text-align: center;
+  font-size: 30rpx;
+	line-height: 30rpx;
+	color: #999;
+}
+.butBox{
+  width: 202rpx;
+	height: 78rpx;
+	line-height: 78rpx;
+  margin:0 auto;
+  font-size: 26rpx;
+  text-align: center;
+	color: #fff;
+	background: #278c58;
+	border-radius: 14rpx;
+}

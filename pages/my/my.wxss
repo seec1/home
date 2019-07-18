@@ -1,0 +1,80 @@
+.myWrap{
+  font-family: SimHei;
+}
+.myTop{
+  width: 750rpx;
+	height: 351rpx;
+  overflow: hidden;
+	background-color: #1ca95e;
+}
+.user{
+  width:150rpx;
+  height:200rpx;
+  margin:75rpx auto;
+}
+.userImg{
+  width: 129rpx;
+	height: 129rpx;
+	background: #ccc;
+	border: solid 6rpx #fff;
+  border-radius: 50%;
+}
+.userName{
+  font-family: MicrosoftYaHei;
+	font-size: 36rpx;
+	color: #fff;
+}
+.myOrder{
+  position:relative;
+  width:750rpx;
+  height:85rpx;
+  box-sizing: border-box;
+  padding:0 26rpx;
+  border:2rpx solid #f8f8f8;
+}
+.myOrderItemImg{
+  width:44rpx;
+  height:44rpx;
+  margin-right:30rpx;
+  vertical-align:middle;
+  background: #ccc;
+}
+.myOrderItemContent{
+  font-size: 30rpx;
+  line-height:85rpx;
+	color: #747474;
+}
+.myOrderItemArrow{
+  position:absolute;
+  top:27rpx;
+  right:28rpx;
+  font-size: 24rpx;
+	color: #ababab;
+}
+.Arrow{
+  font-size:30rpx;
+  font-weight: 700;
+}
+.myStay{
+  display:flex;
+  justify-content: space-around;
+  width:750rpx;
+  padding:24rpx 0 10rpx;
+  border:2rpx solid #f8f8f8;
+}
+.myStayItem{
+  width:70rpx;
+}
+.myStayItemImg{
+  width:44rpx;
+  height:38rpx;
+  margin:0 13rpx;
+  background: #ccc;
+}
+.myStayItemTxt{
+  display:block;
+  font-size: 24rpx;
+  text-align: center;
+	letter-spacing: -2rpx;
+	color: #919191;
+}
