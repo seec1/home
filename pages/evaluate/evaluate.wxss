@@ -94,9 +94,9 @@ ev-line{
 /* 服务态度 */
 .attitude-box{
   display:flex;
-  height:100rpx;
+  height:60rpx;
   line-height:100rpx;
-  padding:0 24rpx;
+  padding:0 24rpx 0 24rpx;
 }
 .att-txt{
   width: 104rpx;
@@ -105,14 +105,31 @@ ev-line{
 	color: #333333;
   /* margin- */
 }
-.att-star{
+.attitude-box .att-star{
   position: relative;
-  top:-10rpx;
+  top:-21rpx;
   margin:0 77rpx 0 22rpx;
+}
+.pd-top-40{
+  padding-top:40rpx;
+}
+.pd-40{
+  padding:40rpx 24rpx;
 }
 .att-att{
   width: 78rpx;
 	font-size: 26rpx;
 	line-height: 43rpx;
 	color: #999999;
+}
+.publish{
+  width: 702rpx;
+	height: 90rpx;
+  margin:50rpx auto;
+	line-height: 90rpx;
+  font-size: 34rpx;
+  text-align: center;
+	color: #fffefe;
+	background-color: #e01616;
+	border-radius: 14rpx;
 }

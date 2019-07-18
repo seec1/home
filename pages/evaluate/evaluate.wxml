@@ -39,9 +39,9 @@
   </view>
   <!-- attitude 态度 -->
   <view class="attitude">
-    <view class="attitude-box">
+    <view class="attitude-box pd-top-40">
       <view class="att-txt">服务态度</view>
-      <view class="ev-top-start">
+      <view class="att-star">
         <van-icon name="star" size='40rpx' color="#e01616"/>
         <van-icon name="star" size='40rpx' color="#e01616"/>
         <van-icon name="star" size='40rpx' color="#e01616"/>
@@ -50,7 +50,7 @@
       </view>
       <view class="att-att">非常好</view>
     </view>
-    <view class="attitude-box">
+    <view class="attitude-box pd-40">
       <view class="att-txt">物流态度</view>
       <view class="att-star">
         <van-icon name="star" size='40rpx' color="#e01616"/>
@@ -62,8 +62,12 @@
       <view class="att-att">非常好</view>
     </view>
   </view>
-  <!-- taidu end -->
-  <!-- publish -->   
+  <!-- end -->
+  <!-- publish -->  
+  <view class="publish" bindtap="publish">
+    发表评论
+  </view> 
   <!-- publish -->
-  
+  <van-toast id="van-toast" />
 </view>
+ 

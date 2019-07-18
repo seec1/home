@@ -1,0 +1,5 @@
+<!--pages/comment-ok/comment-ok.wxml-->
+<view class="comment-ok">
+  <image src="../img/象.png"></image>
+  <text>评价成功！</text>
+</view>
