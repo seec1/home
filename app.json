@@ -9,10 +9,11 @@
     "pages/coupon/coupon",
     "pages/collect/collect",
     "pages/history/history",
-    "pages/refund/refund",
     "pages/goSettlement/goSettlement",
     "pages/myOrder/myOrder",
-    "pages/evaluate/evaluate"
+    "pages/evaluate/evaluate",
+    "pages/refund/refund",
+    "pages/refunding/refunding"
   ],
   "permission": {
     "scope.userLocation": {

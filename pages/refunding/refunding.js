@@ -1,4 +1,4 @@
-// pages/refund/refund.js
+// pages/refunding/refunding.js
 Page({
 
   /**
@@ -7,19 +7,12 @@ Page({
   data: {
 
   },
-  goRefunding(){
-    console.log(1)
-    wx.navigateTo({
-      url: '../refunding/refunding',
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.setNavigationBarTitle({
-      title: '售后/退款',
-    })
+
   },
 
   /**

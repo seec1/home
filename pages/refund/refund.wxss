@@ -2,28 +2,47 @@
 page{
   background: #f2f2f2;
 }
-.top{
-	width: 750rpx;
-	height: 130rpx;
+.refundNav {
+  display: flex;
+}
+.refundNav view {
+  width: 50%;
+  height: 70rpx;
+  line-height: 70rpx;
   text-align: center;
-  line-height: 130rpx;
-	background-color: #ffffff;
-	box-shadow: -3px 0px 7px 0px 
-		rgba(0, 0, 0, 0.06), 
-		inset -1px 0px 2px 0px 
-		rgba(228, 228, 228, 0.35);
+  font-size: 26rpx;
+  background: #fff;
+  margin: 3rpx 0;
+}
+.refundNav view .active{
+  display: inline-block;
+  height: 100%;
+  box-sizing: border-box;
+  color: #dc3025;
+  border-bottom: 2px solid #e01616;
 }
 .shop{
-	width: 702rpx;
-	height: 442rpx;
-  margin: 0 auto;
+	width: 100%;
 	background-color: #ffffff;
-	border-radius: 20rpx;
-  margin-top: 37rpx;
-}
+ }
 .shop .topText{
-  margin-top: 49rpx;
-  margin-left: 65rpx;
+  display: flex;
+  justify-content: space-between;
+  height: 80rpx;
+  text-indent: 21rpx;
+  background:#fff;
+  font-size: 24rpx;
+}
+.shop .topText .orderNumber{
+  flex: 1;
+  line-height: 80rpx;
+ color: #8d8d8d;
+}
+.shop .topText .isFinished{
+  width: 128rpx;
+  text-indent: 0;
+  line-height: 80rpx;
+  color: #24ab63; 
 }
 .shop .topText text{
 	width: 237rpx;
@@ -38,9 +57,9 @@ page{
 }
 .shop .imgText{
   display: flex;
-  margin-left: 19rpx;
-  margin-top: 62rpx;
+  padding: 22rpx;
   width: 100%;
+  background: #f7f7f7;
 }
 .shop .imgText image{
 	width: 181rpx;
@@ -48,35 +67,53 @@ page{
 	border-radius: 10rpx;
 }
 .shop .imgText .shopText{
+  flex: 1;
+}
+.shop .imgText .shopText .goodsTitle{
   display: flex;
-  flex-direction: column;
-	width: 452rpx;
+  justify-content: space-between;  
+  box-sizing: border-box;
 	height: 62rpx;
 	font-size: 26rpx;
-	line-height: 21rpx;
-	letter-spacing: 0rpx;
-  margin-left: 20rpx;
 	color: #383a3a;
+  padding: 19rpx 21rpx;
 }
 .shop .imgText .shopText .description{
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  width: 100%;
-  line-height: 36rpx;
+  flex: 1;
   font-size: 26rpx;
-  margin-bottom: 41rpx;
+}
+.shop .imgText .shopText .checkGoods{
+  box-sizing: border-box;
+  display: flex;  
+  justify-content: space-between;
+  font-size: 22rpx;
+  padding: 19rpx 21rpx 19rpx 25rpx;
+}
+.shop .imgText .shopText .checkGoods text{
+  margin-top: 32rpx;
+  margin-right: 10rpx;
+  color:#bebebe;
+}
+.shop .price{
+  box-sizing: border-box;
+  padding-right: 21rpx;
+  width: 120rpx;
+  color: #dc3025;
+  font-size: 24rpx;
+  text-align: right;
+}
+.shop .price .priceNum{
+  font-size: 32rpx;
+  font-weight: 600;
 }
 .shop .shopRefund{
-  display: flex;
-  font-size: 20rpx;
-  margin-left: 85rpx;
-  margin-top: 42rpx;
-  margin-bottom: 15rpx;
+  box-sizing: border-box;
+  height: 80rpx;
+  line-height: 80rpx;
   color: #9c9a9a;
-}
-.shop .shopRefund .refundSuccess{
-  margin-right: 270rpx;
+  text-align: right;
+  font-size: 20rpx;
+  padding-right: 27rpx;
 }
 .shop .line{
   width: 100%;
@@ -84,18 +121,40 @@ page{
   background: #f2f2f2;
   margin-bottom: 5rpx;
 }
-.shop .lookshop{
-  font-size: 26rpx;
-  color: #da2015;
-  /* padding: 14rpx 21rpx 16rpx 19rpx; */
-	width: 144rpx;
-	height: 55rpx;
-  text-align: center;
+.shop .refundBtn{
+  height: 93rpx;
+  line-height: 93rpx;
+  text-align: right;
+}
+.shop .refundBtn text{
+  display: inline-block;
+  height: 55rpx;
+  padding: 0 18rpx;
   line-height: 55rpx;
+  text-align: center;
+  font-size: 26rpx;
 	border-radius: 28rpx;
-	border: 1rpx solid #dc3025;
-  margin-right: 23rpx;
-  margin-left: 535rpx;
+}
+.shop .refundBtn .refundAppraise{
+  color: #da2015;
+  border: 1px solid #dc3025;
+}
+.shop .refundBtn .lookShop{
+  color: #1ca95e;
+  border: 1px solid #1ca95e;
+  margin-left: 11rpx;
+  margin-right: 21rpx;
+}
+.shop .refundBtn .cancleOrder{
+  color:#ccc;
+  border: 1px solid #ccc;
+}
+.shop .refundBtn .gopay{
+  color:#fff;
+  background: #da2015;
+  border: 1px solid #da2015;
+  margin-left: 11rpx;
+  margin-right: 21rpx;
 }
 .bottomText{
   display: flex;
