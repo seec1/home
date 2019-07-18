@@ -38,6 +38,7 @@ ev-line{
 }
 .ev-top-start{
   line-height: 77rpx;
+  margin-right:50rpx;
 }
 .ev-top-start van-icon{
   margin:5rpx;
@@ -45,19 +46,73 @@ ev-line{
 .ev-textarea{
   font-size:26rpx;
   margin:10rpx 20rpx;
-  border-bottom:2px solid #ccc;
+  border-bottom:1rpx solid #ccc;
 } 
 .upimgbox{
-  width:150rpx;
-  height:170rpx;
-  border:5rpx dashed #ccc;
+  width: 128rpx;
+	height: 128rpx;
+	border: dotted 2rpx #cccccc;
   margin-bottom:10rpx;
+
 }
 .upimg-icon{
   display:block;
-  margin:10rpx 30rpx 0;
+  margin:0 25rpx;
 }
 .upimg-txt{
+  display:block;
+  width:100%;
+  text-align: center;
   font-size:30rpx;
-  padding: 10rpx
+  padding-bottom:10rpx;
+}
+.anonymous{
+  height:145rpx;
+	line-height: 145rpx;
+  padding:0 23rpx;
+  border-bottom:10rpx solid #f5f5f5;
+}
+.anonymous icon{
+  margin:10rpx;
+}
+.a-txt-box{
+  display:inline-block;
+  position:relative;
+  top:-10rpx;
+  height:24rpx;
+  /* padding:38rpx 10rpx; */
+}
+.anonymous-txt{
+  height: 24rpx;
+	font-size: 24rpx;
+	color: #999999;
+}
+.anonymous-txt:first-child{
+  margin:0 200rpx 0 10rpx;
+}
+
+/* 服务态度 */
+.attitude-box{
+  display:flex;
+  height:100rpx;
+  line-height:100rpx;
+  padding:0 24rpx;
+}
+.att-txt{
+  width: 104rpx;
+	font-size: 26rpx;
+	line-height: 43rpx;
+	color: #333333;
+  /* margin- */
+}
+.att-star{
+  position: relative;
+  top:-10rpx;
+  margin:0 77rpx 0 22rpx;
+}
+.att-att{
+  width: 78rpx;
+	font-size: 26rpx;
+	line-height: 43rpx;
+	color: #999999;
 }

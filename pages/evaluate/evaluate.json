@@ -2,5 +2,5 @@
   "usingComponents": {
     "van-icon": "/miniprogram_npm/vant-weapp/icon/index"
   },
-  "navigationBarTitleText": "我要评价"
+  "navigationBarTitleText": "我要发表"
 }

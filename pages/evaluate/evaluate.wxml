@@ -22,16 +22,48 @@
 </view> 
 <view class="ev-textarea">
     <view class="section">
-      <textarea placeholder="宝贝满足你的期待吗？说说你的使用心得，分享给想买的他们吧" auto-focus style="width:100%;height:100rpx" />
+      <textarea placeholder="宝贝满足你的期待吗？说说你的使用心得，分享给想买的他们吧" auto-focus style="width:100%;height:150rpx" />
     </view>
     <view class="upimgbox" bindtap="upimg">
       <van-icon name="photograph" size="80rpx" class="upimg-icon"></van-icon>
       <text class="upimg-txt">添加图片</text>
     </view>
   </view>
-  <view>
-
+  <!-- anonymous匿名 -->
+  <view class="anonymous">
+    <icon type="success" size="20" color="red"/>
+    <view class="a-txt-box">
+      <text class="anonymous-txt">匿名</text>
+      <text class="anonymous-txt">你写的评价会以匿名的形式展现</text>
+    </view>
   </view>
-  
+  <!-- attitude 态度 -->
+  <view class="attitude">
+    <view class="attitude-box">
+      <view class="att-txt">服务态度</view>
+      <view class="ev-top-start">
+        <van-icon name="star" size='40rpx' color="#e01616"/>
+        <van-icon name="star" size='40rpx' color="#e01616"/>
+        <van-icon name="star" size='40rpx' color="#e01616"/>
+        <van-icon name="star" size='40rpx' color="#e01616"/>
+        <van-icon name="star" size='40rpx' color="#e01616"/>
+      </view>
+      <view class="att-att">非常好</view>
+    </view>
+    <view class="attitude-box">
+      <view class="att-txt">物流态度</view>
+      <view class="att-star">
+        <van-icon name="star" size='40rpx' color="#e01616"/>
+        <van-icon name="star" size='40rpx' color="#e01616"/>
+        <van-icon name="star" size='40rpx' color="#e01616"/>
+        <van-icon name="star" size='40rpx' color="#e01616"/>
+        <van-icon name="star" size='40rpx' color="#e01616"/>
+      </view>
+      <view class="att-att">非常好</view>
+    </view>
+  </view>
+  <!-- taidu end -->
+  <!-- publish -->   
+  <!-- publish -->
   
 </view>
