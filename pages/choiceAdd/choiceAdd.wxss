@@ -1,0 +1,63 @@
+/* pages/choiceAdd/choiceAdd.wxss */
+.firstBox{
+  width: 100vw;
+  height: 35vw;
+  background-color: #fbfbfb;
+  box-sizing: border-box;
+  padding: 5vw 3vw 4vw;
+  position: relative;
+}
+
+.firstBox>view:nth-of-type(1){
+  margin: 3vw 0;
+  font-family: MicrosoftYaHei;
+	font-size: 3vw;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 4vw;
+	letter-spacing: 0vw;
+	color: #333333;
+}
+.firstBox>view:nth-of-type(2){
+  font-family: MicrosoftYaHei;
+	font-size: 3vw;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 4vw;
+	letter-spacing: 0vw;
+	color: #333333;
+  overflow: hidden;
+}
+.firstBox>view:nth-of-type(2)>text{
+  float: left;
+}
+.doThis{
+  height: 3vw;
+  line-height: 4vw;
+  float: right;
+}
+.firstBox>view:nth-of-type(3){
+  margin: 5vw 0 3vw 0;
+  font-family: MicrosoftYaHei;
+	font-size: 3vw;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 4vw;
+	letter-spacing: 0vw;
+	color: #333333;
+  display: flex;
+  flex-direction: space-around;
+}
+.firstBox>view:nth-of-type(3) text{
+  line-height: 6vw;
+}
+.firstBox>view:nth-of-type(3) view{
+  flex: 1;
+  text-align: right;
+}
+.firstBox>view:nth-of-type(3) view text{
+  margin-right: 3vw;
+}
+.van-picker{
+  width: 88vw;
+}

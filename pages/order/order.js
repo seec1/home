@@ -37,11 +37,16 @@ Page({
    */
   onLoad: function (options) {
     console.log(options)
-    this.setData({
-      order: JSON.parse(options.orderList)
+    // this.setData({
+    //   order: JSON.parse(options.orderList)
+    // })
+  },
+  /*跳转选择地址*/
+  choiceAddress(){
+    wx.navigateTo({
+      url: '../choiceAdd/choiceAdd',
     })
   },
-
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

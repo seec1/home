@@ -12,7 +12,8 @@
     "pages/refund/refund",
     "pages/goSettlement/goSettlement",
     "pages/myOrder/myOrder",
-    "pages/evaluate/evaluate"
+    "pages/evaluate/evaluate",
+    "pages/choiceAdd/choiceAdd"
   ],
   "permission": {
     "scope.userLocation": {

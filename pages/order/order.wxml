@@ -3,7 +3,7 @@
 <!-- <text>pages/Settlement/Settlement.wxml</text> -->
 <view class='settlement'>
 
-  <view class='address'>
+  <view class='address' bindtap="choiceAddress">
     <van-icon name="location" size='30rpx' color='green' class='location'/>
     <text>请选择收货地址</text>
     <van-icon name="arrow" size='22rpx' class='arrow'/>
