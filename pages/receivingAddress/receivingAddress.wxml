@@ -1,0 +1,68 @@
+<view class="address-box" wx:for="{{info}}">
+  <view class="delete">
+   <van-icon name="cross"/>
+  </view>       
+  <view class="user">{{item.name}}，{{item.phone}}</view>
+  <view class="address">
+    <view>
+      <text>{{item.province}}</text>
+      <text>{{item.city}}</text>
+      <text>{{item.area}}</text>
+      <text>{{item.detailedAddress}}</text>
+    </view>
+    
+    <icon wx:if="{{item.use}}" type="success_no_circle" size="20" color=""/>
+    <text class="" wx:else>使用</text>
+  </view>
+  <view class="status">
+    <view class="left" >
+      <view wx:if="{{item.defaultAddress}}">
+        <icon type="success" size="20" color="red"/>
+        <text class="settrue">已设为默认</text>
+      </view>
+      <view wx:else>
+        <i class="yuan"></i>
+        <text class="setfalse">设为默认</text>
+      </view>
+    </view>
+    <view class="right">
+      <text class="edit">编辑</text>
+      <text class="topping" wx:if="{{item.topping}}">取消置顶</text>
+      <text class="topping" wx:else>置顶</text>
+    </view>
+  </view>
+</view>
+<!-- <view bindtap="addAddress" bind:close="onClose"> -->
+<view  bindtap="addAddress">
+    <text>+</text>
+    <text>添加新收货地址</text>
+</view>
+<!-- 中部弹窗 -->
+<van-popup
+  show="{{ isCenterPopupShow }}"
+  bind:close="onClose"
+>
+  <view class="addAddress-popup">
+    <text class="add-add">添加新收获地址</text>
+    <van-icon name="cross" size="30" bindtap="close"class="cross"/>
+  </view>
+  <view class="goods-user">
+    <view class="user-name"><input placeholder='收货姓名'/></view>
+    <view class="user-phone"><input placeholder='电话'/></view>
+  </view>
+  <view class="selection-areas" bindtap="onBottomPopupShow">
+    <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+      <view class="picker">
+        <text wx:if="{{region==false}}">选择地区</text>
+        <view wx:else>
+          <text wx:for="{{region}}">{{item}}</text>
+        </view>
+      </view>
+    </picker>
+    <van-icon name="arrow" size="30" bindtap="close"/>
+  </view>
+  <view class="detailed-address">
+    <input placeholder='详细地址（如街道、小区、乡镇、村）'/>  
+  </view>
+  <view class="preservation">保存</view>
+</van-popup>

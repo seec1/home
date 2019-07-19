@@ -1,0 +1,25 @@
+.yuan{
+  display:inline-block;
+  width:40rpx;
+  height:40rpx;
+  border:2rpx solid #ccc;
+  border-radius: 50%;
+}
+.addAddress-popup{
+  position:relative;
+  display:flex;
+  width:702rpx;
+  height:72rpx;
+  line-height:72rpx;
+  font-size: 34rpx;
+  text-align:center;
+  color: #333333;
+}
+.add-add{
+  flex:1;
+}
+.cross{
+  position:absolute;
+  right:20rpx;
+  color: #999999;
+}
