@@ -9,15 +9,33 @@ Page({
     radio: '1',
     a : true,
     show:false,
-    areaList:{}
+    areaList:{},
+    region: ['广东省', '广州市', '海珠区'],
+    customItem: '全部',
+    focus: false,
+    useres:'收货人姓名',
+    phone:'手机号'
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onClose() {
+    let _this = this;
+    wx.chooseAddress({
+      success(res) {
+        _this.setData({
+          useres:res.userName,
+          phone: res.telNumber,
+          region: [res.provinceName,res.cityName,res.countyName]
+        })
+        console.log(res.detailInfo)
+        console.log(_this.data)
+      }
+    })
     this.setData({ show: false });
   },
+
   onChange(event) {
     if(this.data.a){
       this.setData({
@@ -55,7 +73,7 @@ Page({
     this.setData({
       areaList: json
     })
-    
+    console.log(json)
   },
 
   //定位方法
@@ -151,6 +169,14 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
+  cancel(){
+    console.log(1);
+  },
+  bindButtonTap: function () {
+    this.setData({
+      focus: true
+    })
+  },
   onShow: function () {
 
   },

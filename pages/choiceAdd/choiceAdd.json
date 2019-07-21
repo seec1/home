@@ -2,7 +2,7 @@
   "usingComponents": {
     "van-radio": "/miniprogram_npm/vant-weapp/radio/index",
     "van-radio-group": "/miniprogram_npm/vant-weapp/radio-group/index",
-    "van-popup": "/miniprogram_npm/vant-weapp/popup/index",
+    "van-dialog": "/miniprogram_npm/vant-weapp/dialog/index",
     "van-area": "/miniprogram_npm/vant-weapp/area/index"
   }
 }

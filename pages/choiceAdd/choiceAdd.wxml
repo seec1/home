@@ -27,6 +27,35 @@
 </view>
 <button type="warn" size="default" loading="{{false}}" plain="{{false}}"
   disabled="{{false}}" bindtap="warn"> 添加新的收货地址 </button>
-<van-popup show="{{ show }}" bind:close="onClose">
-  <van-area area-list="{{ areaList }}" value="110101" />
-</van-popup>
+<!-- <van-popup show="{{ show }}" bind:close="onClose"> -->
+    <!-- <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+    <view class="picker">
+      {{region[0]}}，{{region[1]}}，{{region[2]}}
+    </view>
+  </picker> -->
+  <!-- <van-area area-list="{{ areaList }}" value="110114" /> -->
+  <!-- <view class="addresses">
+    <text>添加收货地址</text>
+    <view class="section">
+      <input placeholder="收货人姓名" focus="{{focus}}" />
+      <input placeholder="电话" focus="{{focus}}" />
+    </view>
+  </view> -->
+<!-- </van-popup> -->
+<van-dialog
+  use-slot
+  show="{{ show }}"
+  show-cancel-button
+  confirm-button-open-type="getUserInfo"
+  bind:close="onClose"
+  bind:getuserinfo="getUserInfo"
+>
+  <view class="addresses">
+    <text>添加收货地址</text>
+    <view class="section">
+      <input placeholder="{{useres}}" focus="{{focus}}" />
+      <input placeholder="{{phone}}" focus="{{focus}}" />
+    </view>
+    <view class="choiceA"><text>选择地区</text><text>></text></view>
+  </view>
+</van-dialog>

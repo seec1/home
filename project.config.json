@@ -48,7 +48,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 7,
+			"current": 13,
 			"list": [
 				{
 					"id": -1,
@@ -101,8 +101,50 @@
 				},
 				{
 					"id": -1,
-					"name": "pages/choiceAdd/choiceAdd",
-					"pathName": "pages/choiceAdd/choiceAdd",
+					"name": "详情",
+					"pathName": "pages/detail/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "评价成功",
+					"pathName": "pages/comment-ok/comment-ok",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "评价成功",
+					"pathName": "pages/my/my",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "售后退款",
+					"pathName": "pages/refund/refund",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "售后服务评价",
+					"pathName": "pages/toevaluation/toevaluation",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "售后服务评价2",
+					"pathName": "pages/toevaluation2/toevaluation2",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 13,
+					"name": "pages/receivingAddress/receivingAddress",
+					"pathName": "pages/receivingAddress/receivingAddress",
 					"query": "",
 					"scene": null
 				}

@@ -61,3 +61,20 @@
 .van-picker{
   width: 88vw;
 }
+
+.addresses{
+  width: 88vw;
+  height: 60vw;
+  box-sizing: border-box;
+  padding: 1vw;
+  /* text-align: center; */
+}
+.addresses>text{
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.choiceA{
+  display: flex;
+  justify-content: space-between;
+}

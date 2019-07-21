@@ -1,0 +1,68 @@
+/* pages/toevaluation2/toevaluation2.wxss */
+.toevaluation2{
+  font-family: MicrosoftYaHei;
+
+}
+.icon-box{
+  width: 160rpx;
+	height: 156rpx;
+  font-size: 26rpx;
+  text-align: center;
+  margin:100rpx auto;
+}
+
+.icon1{
+	color: #333;
+  margin:19rpx 0 17rpx;
+}
+.icon2{
+	color: #999;
+}
+
+.content{
+  position: relative;
+  display:flex;
+  height:80rpx;
+  padding:0 23rpx;
+  line-height:80rpx;
+  font-size: 26rpx;
+	color: #333333;
+  border:20rpx solid #f2f2f2;
+  border-left:0;
+  border-right:0;
+}
+.right{
+  position:absolute;
+  right:47rpx;
+  color: #b7b7b7;
+}
+.r-top{
+  font-size: 22rpx;
+	color: #999999;
+  padding:24rpx 0 19rpx 23rpx;
+}
+
+.attitude-box{
+  display:flex;
+  height:60rpx;
+  line-height:100rpx;
+  padding-left:24rpx;
+}
+.att-txt{
+  width: 104rpx;
+	font-size: 26rpx;
+	line-height: 43rpx;
+	color: #333333;
+  /* margin- */
+}
+.attitude-box .att-star{
+  position: relative;
+  top:-21rpx;
+  margin:0 77rpx 0 46rpx;
+}
+.att-att{
+  width: 78rpx;
+	font-size: 26rpx;
+	line-height: 43rpx;
+	color: #999999;
+}

@@ -1,37 +1,13 @@
-// pages/evaluate/evaluate.js
-import Toast from '../../miniprogram_npm/vant-weapp/toast/toast';
+// pages/refunding/refunding.js
 Page({
+
   /**
    * 页面的初始数据
    */
   data: {
 
   },
-  upimg(){
-    wx.chooseImage({
-      success(res) {
-        const tempFilePaths = res.tempFilePaths
-        wx.uploadFile({
-          url: 'https://example.weixin.qq.com/upload', //仅为示例，非真实的接口地址
-          filePath: tempFilePaths[0],
-          name: 'file',
-          formData: {
-            'user': 'test'
-          },
-          success(res) {
-            const data = res.data
-            //do something
-          }
-        })
-      }
-    })
-  },
-  publish(){
-    Toast.success("发表成功")
-    wx.navigateTo({
-      url: '../comment-ok/comment-ok',
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

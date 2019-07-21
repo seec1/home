@@ -1,13 +1,14 @@
-// pages/evaluate/evaluate.js
+// pages/toevaluation/toevaluation.js
 import Toast from '../../miniprogram_npm/vant-weapp/toast/toast';
 Page({
+
   /**
    * 页面的初始数据
    */
   data: {
 
   },
-  upimg(){
+  upimg() {
     wx.chooseImage({
       success(res) {
         const tempFilePaths = res.tempFilePaths
@@ -26,10 +27,10 @@ Page({
       }
     })
   },
-  publish(){
+  publish() {
     Toast.success("发表成功")
     wx.navigateTo({
-      url: '../comment-ok/comment-ok',
+      url: '../toevaluation2/toevaluation2',
     })
   },
   /**

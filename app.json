@@ -9,11 +9,16 @@
     "pages/coupon/coupon",
     "pages/collect/collect",
     "pages/history/history",
-    "pages/refund/refund",
     "pages/goSettlement/goSettlement",
     "pages/myOrder/myOrder",
     "pages/evaluate/evaluate",
-    "pages/choiceAdd/choiceAdd"
+    "pages/choiceAdd/choiceAdd",
+    "pages/comment-ok/comment-ok",
+    "pages/refund/refund",
+    "pages/refunding/refunding",
+    "pages/toevaluation/toevaluation",
+    "pages/toevaluation2/toevaluation2",
+    "pages/receivingAddress/receivingAddress"
   ],
   "permission": {
     "scope.userLocation": {
