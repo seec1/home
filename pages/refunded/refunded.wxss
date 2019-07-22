@@ -1,0 +1,87 @@
+/* pages/refunded/refunded.wxss */
+page{
+  background: #f7f7f7;
+}
+.successTime{
+  box-sizing: border-box;
+  height: 246rpx;
+  padding: 82rpx 24rpx;
+  background: #dc3025;
+  color: #fff;
+  font-size: 26rpx;
+}
+.successTime view{
+  margin-bottom: 20rpx;
+}
+.successTime view text{
+  margin-right: 40rpx;
+}
+.refundMsg{
+  background: #fff;
+}
+.refundMsg .refundMsgTitle{
+  height: 82rpx;
+  line-height: 82rpx;
+  font-size: 26rpx;
+  text-indent: 23rpx;
+}
+.refundMsg .refundedGoods .goods{
+  box-sizing: border-box;
+  display: flex;
+  padding: 24rpx;
+  background: #f7f7f7;
+}
+.refundMsg .refundedGoods .goods .goodsImg{
+  width: 160rpx;
+  height: 160rpx;
+  background: #ccc;
+}
+.refundMsg .refundedGoods .goods .goodsMsg{
+  box-sizing: border-box;
+  flex: 1;
+  padding-left: 36rpx; 
+}
+.refundedGoods .goods .goodsMsg .goodsTitle{
+   font-size: 26rpx;
+ }
+.refundedGoods .goods .goodsMsg .checkGoods{
+  display: flex;
+  justify-content: space-between;
+  font-size: 22rpx;
+  color: #bebebe;
+  margin-top: 31rpx;  
+}
+.refundedGoods .refundedMsgBox{
+  box-sizing: border-box;
+  padding: 0 24rpx 18rpx;
+  font-size: 22rpx;
+  margin-top: 18rpx;
+  color: #bebebe;
+}
+.refundedAllAmount{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  height: 82rpx;
+  font-size: 26rpx;
+  background: #fff;
+  padding: 23rpx;
+  margin-top: 30rpx;
+}
+.refundedAllAmount .refundedAmount{
+  color: #dc3025;
+  font-size: 24rpx;
+}
+.refundedAllAmount .refundedAmount .Num{
+  font-size: 32rpx;
+}
+.afterSale{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  height: 82rpx;
+  font-size: 26rpx;
+  background: #fff;
+  padding: 23rpx;
+  margin-top: 30rpx;
+}

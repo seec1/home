@@ -1,1 +1,132 @@
 /* pages/refunding/refunding.wxss */
+page{
+  background: #f7f7f7;
+}
+.refundGoods {
+  padding-top: 15rpx;
+}
+.refundGoods .content{
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  padding: 24rpx;
+  background: #fff;
+}
+.refundGoods .content .goodsImg{
+  width: 160rpx;
+  height: 160rpx;
+  background: #ccc;
+}
+.refundGoods .content .goodsMsg{
+  flex: 1;
+  padding-left: 36rpx;
+}
+.refundGoods .content .goodsMsg .goods{
+  display: flex;
+}
+.refundGoods .content .goodsMsg .goods .goodsTitle{
+  font-size: 26rpx;
+  font-weight: 600;
+}
+.goodsPrice{
+  font-size: 24rpx;
+  color: #dc3025;
+}
+.goodsPrice .bigFont{
+  font-size: 32rpx;
+  font-weight: 600;
+}
+.refundGoods .content .goodsMsg .checkMsg{
+  display: flex;
+  justify-content: space-between;
+  color: #bebebe;
+  padding-top: 31rpx;
+  font-size: 22rpx;
+}
+.refundReason{
+  display: flex;
+  justify-content: space-between;
+  height: 82rpx;
+  background: #fff;
+  margin-top: 30rpx;
+  line-height: 82rpx;
+  padding: 0 24rpx;
+  font-size: 26rpx;
+  color: #383a3a;
+}
+.refundReason .checkReason{
+  color: #bebebe;
+}
+.refundAmount{
+  height: 82rpx;
+  margin-top: 30rpx;
+  background: #fff;
+  line-height: 82rpx;
+  font-size: 26rpx;
+  padding-left: 24rpx;
+}
+.refundAmount .refunAmountTitle{
+  color: #383a3a;
+}
+.refundDescription{
+  display: flex;
+  height: 82rpx;
+  background: 30rpx;
+  line-height: 82rpx;
+  font-size: 26rpx;
+  background: #fff;
+  padding-left: 24rpx;
+}
+.refundDescription input{
+  flex: 1;
+  height: 100%;
+}
+.uploadVoucher{
+  height: 240rpx;
+  margin-top: 30rpx;
+  background: #fff;
+  font-size: 26rpx;
+  line-height: 84rpx;
+  padding-left: 24rpx;
+}
+.uploadData{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; 
+  background: #dc3025;
+} 
+.uploadData button{
+  background: #dc3025;
+  color: #fff;
+}
+.sheet-index--van-action-sheet__close.van-icon.van-icon.van-icon-close.van-icon-close{
+  display: none;
+}
+.van-action-sheet__cancel{
+  height: 95rpx;
+  background: #dc3025 !important;
+  color: #fff;
+}
+.checkRadioItem{
+  display: flex;
+  justify-content: space-between;
+  height: 98rpx;
+  line-height: 98rpx;
+  margin: 0 23rpx;
+  border-bottom: 1px solid #bebebe;
+  font-size: 26rpx;
+}
+.checkRadioItem .checkRadio{
+  width: 22rpx;
+  height: 22rpx;
+  border: 1px solid #bebebe;
+  border-radius: 50%;
+  margin: auto 0;
+}
+.checkRadioItem .active{
+  background: #bebebe;
+}
+.checkRadioItem:last-child{
+  border: none;
+}
