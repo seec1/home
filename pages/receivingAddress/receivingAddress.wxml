@@ -10,25 +10,24 @@
       <text>{{item.area}}</text>
       <text>{{item.detailedAddress}}</text>
     </view>
-    
     <icon wx:if="{{item.use}}" type="success_no_circle" size="20" color=""/>
-    <text class="" wx:else>使用</text>
+    <text class="" wx:else bindtap="useing" data-index="{{index}}">使用</text>
   </view>
   <view class="status">
     <view class="left" >
-      <view wx:if="{{item.defaultAddress}}">
+      <view wx:if="{{item.defaultAddress}}" bindtap="defaultMoren" data-index="{{index}}">
         <icon type="success" size="20" color="red"/>
         <text class="settrue">已设为默认</text>
       </view>
-      <view wx:else>
+      <view wx:else  bindtap="defaultMoren" data-index="{{index}}">
         <i class="yuan"></i>
         <text class="setfalse">设为默认</text>
       </view>
     </view>
     <view class="right">
       <text class="edit">编辑</text>
-      <text class="topping" wx:if="{{item.topping}}">取消置顶</text>
-      <text class="topping" wx:else>置顶</text>
+      <text class="topping" wx:if="{{item.topping}}" bindtap="unTopping" data-index="{{index}}">取消置顶</text>
+      <text class="topping" wx:else bindtap="topping" data-index="{{index}}">置顶</text>
     </view>
   </view>
 </view>
@@ -46,8 +45,8 @@
     <van-icon name="cross" size="30" bindtap="close"class="cross"/>
   </view>
   <view class="goods-user">
-    <view class="user-name"><input placeholder='收货姓名'/></view>
-    <view class="user-phone"><input placeholder='电话'/></view>
+    <view class="user-name"><input placeholder='收货姓名' bindinput="usernamer"/></view>
+    <view class="user-phone"><input type="number" placeholder='电话' bindinput="userphoner"/></view>
   </view>
   <view class="selection-areas" bindtap="onBottomPopupShow">
     <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}" style="height:10vw;">
@@ -61,7 +60,7 @@
     <van-icon name="arrow" size="30" bindtap="close" style="position:absolute;top:0;right:2vw;"/>
   </view>
   <view class="detailed-address">
-    <input placeholder='详细地址（如街道、小区、乡镇、村）'/> 
+    <input placeholder='详细地址（如街道、小区、乡镇、村）' bindinput="userAddress"/> 
   </view>
-  <view class="preservation">保存</view>
+  <view class="preservation" bindtap="newAddress">保存</view>
 </van-popup>

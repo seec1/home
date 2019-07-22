@@ -25,7 +25,6 @@
 }
 .address-box{
   width: 100vw;
-  height: 35vw;
   position: relative;
   box-sizing: border-box;
   padding: 8vw 3vw 3vw 3vw;
@@ -43,7 +42,8 @@
   padding-bottom: 5vw;
 }
 .address view{
-  line-height: 3vw;
+  line-height: 6vw;
+  width: 76vw;
 }
 .address icon{
   position: absolute;
@@ -58,16 +58,22 @@
 .status{
   display: flex;
   flex-direction: space-between;
+  width: 100%;
 }
 .user{
   margin-bottom: 2vw;
 }
 .left view{
   line-height: 3vw;
-  margin-right: 28vw;
+  margin-right: 25vw;
 }
 .left view icon{
   line-height: 3vw;
+}
+.right{
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
 }
 .right text{
   line-height: 3vw;
