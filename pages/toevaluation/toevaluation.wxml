@@ -1,26 +1,26 @@
-<!--pages/evaluate/evaluate.wxml-->
-<!-- <text>pages/evaluate/evaluate.wxml</text> -->
-<view class="evaluate">
-<view class="ev-line"></view>
-<view class="ev-top">
-  <view class="ev-top-img">
-    <image src="" class="evaluate-img"></image>
+<!--pages/toevaluation/toevaluation.wxml-->
+
+<view class="toevaluation">
+  <view class="to-top">
+    <view class="to-top-img">
+      <image src=""></image>
+    </view>
+    <view class="evaluate-status">
+      <view class="icon-box">
+        <van-icon name="flower-o" color="red" size="20"/>
+        <text>好评</text>
+      </view>
+      <view class="icon-box">
+        <van-icon name="flower-o" size="20"/>
+        <text>中评</text>
+      </view>
+      <view class="icon-box">
+        <van-icon name="flower-o" size="20"/>
+        <text>差评</text>
+      </view>
+    </view>
   </view>
-  <view class="ev-top-txt">
-    <text class="ev-top-txt1">描述相符</text>
-  </view>
-  <view class="ev-top-start">
-    <van-icon name="star" size='40rpx' color="#e01616"/>
-    <van-icon name="star" size='40rpx' color="#e01616"/>
-    <van-icon name="star" size='40rpx' color="#e01616"/>
-    <van-icon name="star" size='40rpx' color="#e01616"/>
-    <van-icon name="star" size='40rpx' color="#e01616"/>
-  </view>
-  <view class="ev-top-txt">
-    <text class='ev-top-txt2'>非常好</text>
-  </view>
-</view> 
-<view class="ev-textarea">
+  <view class="ev-textarea">
     <view class="section">
       <textarea placeholder="宝贝满足你的期待吗？说说你的使用心得，分享给想买的他们吧" auto-focus style="width:100%;height:150rpx" />
     </view>
@@ -39,6 +39,17 @@
   </view>
   <!-- attitude 态度 -->
   <view class="attitude">
+    <view class="attitude-box pd-top-40">
+      <view class="att-txt">描述相符</view>
+      <view class="att-star">
+        <van-icon name="star" size='40rpx' color="#e01616"/>
+        <van-icon name="star" size='40rpx' color="#e01616"/>
+        <van-icon name="star" size='40rpx' color="#e01616"/>
+        <van-icon name="star" size='40rpx' color="#e01616"/>
+        <van-icon name="star" size='40rpx' color="#e01616"/>
+      </view>
+      <view class="att-att">非常好</view>
+    </view>
     <view class="attitude-box pd-top-40">
       <view class="att-txt">服务态度</view>
       <view class="att-star">
@@ -70,4 +81,4 @@
   <!-- publish -->
   <van-toast id="van-toast" />
 </view>
- 
+<!-- </view> -->

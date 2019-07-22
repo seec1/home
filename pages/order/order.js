@@ -31,17 +31,21 @@ Page({
     */
     order:[]
   },
-
+  receivingAddress() {
+    wx.navigateTo({
+      url: '../receivingAddress/receivingAddress',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
     console.log(options)
-    this.setData({
-      order: JSON.parse(options.orderList)
-    })
+    // this.setData({
+    //   order: JSON.parse(options.orderList)
+    // })
   },
-
+  /*跳转选择地址*/
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

@@ -1,0 +1,114 @@
+.yuan{
+  display:inline-block;
+  width:40rpx;
+  height:40rpx;
+  border:2rpx solid #ccc;
+  border-radius: 50%;
+}
+.addAddress-popup{
+  position:relative;
+  display:flex;
+  width:702rpx;
+  height:72rpx;
+  line-height:72rpx;
+  font-size: 34rpx;
+  text-align:center;
+  color: #333333;
+}
+.add-add{
+  flex:1;
+}
+.cross{
+  position:absolute;
+  right:20rpx;
+  color: #999999;
+}
+.address-box{
+  width: 100vw;
+  height: 35vw;
+  position: relative;
+  box-sizing: border-box;
+  padding: 8vw 3vw 3vw 3vw;
+}
+.delete{
+  position: absolute;
+  top: 2vw;
+  right: 3vw;
+  width: 3vw;
+  height: 3vw;
+}
+.address{
+  line-height: 3vw;
+  position: relative;
+  padding-bottom: 5vw;
+}
+.address view{
+  line-height: 3vw;
+}
+.address icon{
+  position: absolute;
+  right: 3vw;
+  top: 0;
+}
+.address>text{
+  position: absolute;
+  right: 3vw;
+  top: 0;
+}
+.status{
+  display: flex;
+  flex-direction: space-between;
+}
+.user{
+  margin-bottom: 2vw;
+}
+.left view{
+  line-height: 3vw;
+  margin-right: 28vw;
+}
+.left view icon{
+  line-height: 3vw;
+}
+.right text{
+  line-height: 3vw;
+}
+.btn{
+  width: 94vw;
+  height: 12vw;
+  margin: 7vw 0 0 3vw;
+  background-color: #e01616;
+  border-radius: 2vw;
+  color: #fff;
+  text-align: center;
+  line-height: 12vw;
+}
+.selection-areas{
+  position: relative;
+}
+/* .selection-areas{} */
+.van-center-enter-active,.van-center-leave-active {
+  width: 94vw;
+  height: 67vw;
+  box-sizing: border-box;
+  padding: 2vw;
+  /* transition-property: opacity; */
+}
+.goods-user{
+  width: 100%;
+  display: flex;
+}
+.goods-user view input{
+  padding: 3vw 0;
+}
+.detailed-address input{
+  padding: 3vw 0;
+}
+.preservation{
+  width: 90vw;
+  height: 11vw;
+  background: #ccc;
+  text-align: center;
+  line-height: 11vw;
+  color: #fff;
+  margin: 4vw auto 0;
+}

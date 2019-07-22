@@ -1,0 +1,28 @@
+<!--pages/toevaluation2/toevaluation2.wxml-->
+<view class="toevaluation2">
+  <view class="icon-box">
+    <icon type="success" size="30"></icon>
+    <view class="icon1">已评价</view>
+    <view class="icon2">感谢您的评价</view>
+  </view>
+  <view class="content">
+    <view class="left">留下更多反馈，帮助我们提供更好服务</view>
+    <view class="right">
+      <van-icon name="arrow" />
+    </view>
+  </view>
+  <view class="record">
+    <view class="r-top">评价记录</view>
+    <view class="attitude-box">
+      <view class="att-txt">服务态度</view>
+      <view class="att-star">
+        <van-icon name="star" size='40rpx' color="#e01616"/>
+        <van-icon name="star" size='40rpx' color="#e01616"/>
+        <van-icon name="star" size='40rpx' color="#e01616"/>
+        <van-icon name="star" size='40rpx' color="#e01616"/>
+        <van-icon name="star" size='40rpx' color="#ccc"/>
+      </view>
+      <view class="att-att">好</view>
+    </view>
+  </view>
+</view>

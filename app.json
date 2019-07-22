@@ -14,8 +14,12 @@
     "pages/refund/refund",
     "pages/refunded/refunded",
     "pages/refunding/refunding",
-    "pages/evaluate/evaluate"
-    
+    "pages/evaluate/evaluate",
+    "pages/choiceAdd/choiceAdd",
+    "pages/comment-ok/comment-ok",
+    "pages/toevaluation/toevaluation",
+    "pages/toevaluation2/toevaluation2",
+    "pages/receivingAddress/receivingAddress"
   ],
   "permission": {
     "scope.userLocation": {

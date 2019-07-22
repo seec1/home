@@ -1,0 +1,22 @@
+/* pages/comment-ok/comment-ok.wxss */
+.comment-ok{
+  width:284rpx;
+  height:100%;
+  margin:50% auto;
+}
+image{
+  width:284rpx;
+  height:170rpx;
+  /* background-color: #397755; */
+  background: #fff;
+	opacity: 0.6;
+}
+text{
+  display:block;
+  width:100%;
+  padding:20rpx 0;
+  text-align: center; 
+  font-size: 30rpx;
+	line-height: 31rpx;
+	color: #999999;
+}

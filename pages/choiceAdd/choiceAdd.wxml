@@ -1,0 +1,61 @@
+<!--pages/choiceAdd/choiceAdd.wxml-->
+<view class="firstBox">
+  <view>巫宇，13453686167</view>
+  <view>
+    <text>
+      北京市 北京市 西城区 南菜园街88号
+    </text>
+    <view class="doThis">
+      <icon type="success" color="blue" size="10"/>
+      <text>使用</text>
+    </view>
+  </view>
+  <view>
+    <!-- <checkbox-group bindchange="checkboxChange">
+      <label class="checkbox">
+        <checkbox value="{{a}}" checked="{{checked}}"/>默认位置
+      </label>
+    </checkbox-group> -->
+    <icon type="success" color="red" size="20"/>
+    <text>默认位置</text>
+    <view>
+      <text>编辑</text>
+      <text>取消置顶</text>
+    </view>
+  </view>
+  
+</view>
+<button type="warn" size="default" loading="{{false}}" plain="{{false}}"
+  disabled="{{false}}" bindtap="warn"> 添加新的收货地址 </button>
+<!-- <van-popup show="{{ show }}" bind:close="onClose"> -->
+    <!-- <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+    <view class="picker">
+      {{region[0]}}，{{region[1]}}，{{region[2]}}
+    </view>
+  </picker> -->
+  <!-- <van-area area-list="{{ areaList }}" value="110114" /> -->
+  <!-- <view class="addresses">
+    <text>添加收货地址</text>
+    <view class="section">
+      <input placeholder="收货人姓名" focus="{{focus}}" />
+      <input placeholder="电话" focus="{{focus}}" />
+    </view>
+  </view> -->
+<!-- </van-popup> -->
+<van-dialog
+  use-slot
+  show="{{ show }}"
+  show-cancel-button
+  confirm-button-open-type="getUserInfo"
+  bind:close="onClose"
+  bind:getuserinfo="getUserInfo"
+>
+  <view class="addresses">
+    <text>添加收货地址</text>
+    <view class="section">
+      <input placeholder="{{useres}}" focus="{{focus}}" />
+      <input placeholder="{{phone}}" focus="{{focus}}" />
+    </view>
+    <view class="choiceA"><text>选择地区</text><text>></text></view>
+  </view>
+</van-dialog>

@@ -22,7 +22,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.7.1",
-	"appid": "wxbdc54fe31408e789",
+	"appid": "wxbaf475466fc6c4d1",
 	"projectname": "%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85%E7%94%9F%E6%80%81%E9%A6%86",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -48,7 +48,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 6,
+			"current": 13,
 			"list": [
 				{
 					"id": -1,
@@ -96,6 +96,56 @@
 					"id": -1,
 					"name": "评价",
 					"pathName": "pages/evaluate/evaluate",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "详情",
+					"pathName": "pages/detail/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "评价成功",
+					"pathName": "pages/comment-ok/comment-ok",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "评价成功",
+					"pathName": "pages/my/my",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "售后退款",
+					"pathName": "pages/refund/refund",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "售后服务评价",
+					"pathName": "pages/toevaluation/toevaluation",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "售后服务评价2",
+					"pathName": "pages/toevaluation2/toevaluation2",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 13,
+					"name": "pages/receivingAddress/receivingAddress",
+					"pathName": "pages/receivingAddress/receivingAddress",
+					"query": "",
 					"scene": null
 				}
 			]

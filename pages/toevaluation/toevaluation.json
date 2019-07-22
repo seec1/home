@@ -3,5 +3,5 @@
     "van-icon": "/miniprogram_npm/vant-weapp/icon/index",
     "van-toast": "/miniprogram_npm/vant-weapp/toast/index"
   },
-  "navigationBarTitleText": "我要发表"
+  "navigationBarTitleText": "售后评价"
 }
