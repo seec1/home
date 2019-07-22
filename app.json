@@ -1,8 +1,5 @@
 {
   "pages": [
-    "pages/refund/refund",
-    "pages/refunded/refunded",
-    "pages/refunding/refunding",
     "pages/index/index",
     "pages/detail/detail",
     "pages/news/news",
@@ -14,6 +11,9 @@
     "pages/history/history",
     "pages/goSettlement/goSettlement",
     "pages/myOrder/myOrder",
+    "pages/refund/refund",
+    "pages/refunded/refunded",
+    "pages/refunding/refunding",
     "pages/evaluate/evaluate"
     
   ],
