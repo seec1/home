@@ -46,31 +46,31 @@ Page({
     wx.getSetting({
       success(res) {
         if (!res.authSetting['scope.userLocation']) {
-          wx.chooseLocation({
-            success(res){
-              console.log(res)
-            },
-            fail(error){
-              console.log(error)
-            }
-          })
-          // wx.authorize({
-          //   scope: 'scope.userLocation',
-          //   success() {
-          //     wx.getLocation({
-          //       type: 'wgs84',
-          //       success(res) {
-          //         console.log(res)
-          //         const latitude = res.latitude
-          //         const longitude = res.longitude
-          //         const speed = res.speed
-          //         const accuracy = res.accuracy
-          //         console.log(latitude,longitude,speed,accuracy)
-          //       }
-          //     })
-          //     // _this.setData({ isCenterPopupShow: true });
+          // wx.chooseLocation({
+          //   success(res){
+          //     console.log(res)
+          //   },
+          //   fail(error){
+          //     console.log(error)
           //   }
           // })
+          wx.authorize({
+            scope: 'scope.userLocation',
+            success() {
+              wx.getLocation({
+                type: 'wgs84',
+                success(res) {
+                  console.log(res)
+                  const latitude = res.latitude
+                  const longitude = res.longitude
+                  const speed = res.speed
+                  const accuracy = res.accuracy
+                  console.log(latitude,longitude,speed,accuracy)
+                }
+              })
+              _this.setData({ isCenterPopupShow: true });
+            }
+          })
         }else{
           _this.setData({ isCenterPopupShow: true });
         }
